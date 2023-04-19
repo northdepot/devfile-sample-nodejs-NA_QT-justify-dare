@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nodejs
+  namespace: user1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/devfile-sample-nodejs@sha256:1cf2362b1912b40f2eec555180e91696ba30acb6fcaa42ffc5981ed6b4856497
+        name: my-nodejs
+        resources: {}
+status: {}
